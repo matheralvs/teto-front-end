@@ -9,6 +9,8 @@ import DashboardLayout from '../layouts/dashboard';
 import { PATH_AFTER_LOGIN } from '../config-global';
 //
 import {
+  // Dashboard: General
+  GeneralAppPage,
   Page404,
   PageOne,
   PageTwo,
@@ -46,6 +48,7 @@ export default function Router() {
       ),
       children: [
         { element: <Navigate to={PATH_AFTER_LOGIN} replace />, index: true },
+        { path: 'app', element: <GeneralAppPage /> },
         { path: 'one', element: <PageOne /> },
         { path: 'two', element: <PageTwo /> },
         { path: 'three', element: <PageThree /> },

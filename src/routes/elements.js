@@ -15,6 +15,9 @@ const Loadable = (Component) => (props) =>
 
 export const LoginPage = Loadable(lazy(() => import('../pages/LoginPage')));
 
+// DASHBOARD: GENERAL
+export const GeneralAppPage = Loadable(lazy(() => import('../pages/dashboard/GeneralAppPage')));
+
 export const PageOne = Loadable(lazy(() => import('../pages/PageOne')));
 export const PageTwo = Loadable(lazy(() => import('../pages/PageTwo')));
 export const PageThree = Loadable(lazy(() => import('../pages/PageThree')));

@@ -22,10 +22,9 @@ const navConfig = [
   {
     subheader: 'Geral',
     items: [
-      { title: 'app', path: PATH_DASHBOARD.general.app, icon: ICONS.dashboard },
-      { title: 'Início', path: PATH_DASHBOARD.one, icon: ICONS.dashboard },
-      { title: 'Clientes', path: PATH_DASHBOARD.two, icon: ICONS.ecommerce },
-      { title: 'Produtos', path: PATH_DASHBOARD.three, icon: ICONS.analytics },
+      { title: 'Início', path: PATH_DASHBOARD.general.app, icon: ICONS.dashboard },
+      { title: 'Clientes', path: PATH_DASHBOARD.one, icon: ICONS.dashboard },
+      { title: 'Produtos', path: PATH_DASHBOARD.two, icon: ICONS.ecommerce },
     ],
   },
 
