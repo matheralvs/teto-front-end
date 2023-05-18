@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 
 // @mui
-import { Container, Grid, Typography } from '@mui/material';
+import { Card, CardHeader, CardContent, Container, Grid, Typography } from '@mui/material';
 
 // auth
 
@@ -10,7 +10,8 @@ import { Container, Grid, Typography } from '@mui/material';
 // components
 import { useSettingsContext } from '../../components/settings';
 // sections
-import AnalyticsWidgetSummary from '../../sections/@dashboard/general/analytics/AnalyticsWidgetSummary';
+import { AnalyticsWidgetSummary } from '../../sections/@dashboard/general/analytics';
+import { ChartLine } from '../../sections/_examples/extra/chart';
 
 // assets
 
@@ -58,25 +59,14 @@ export default function GeneralAppPage() {
             />
           </Grid>
 
-          <Grid item xs={12} md={4}>
-            <h1>2</h1>
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <h1>3</h1>
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <h1>4</h1>
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <h1>5</h1>
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <h1>6</h1>
-          </Grid>          
+          <Grid item xs={12}>
+            <Card dir="ltr">
+              <CardHeader title="Últimos 9 meses" />
+              <CardContent>
+                <ChartLine />
+              </CardContent>
+            </Card>
+          </Grid>     
         </Grid>
       </Container>
     </>
