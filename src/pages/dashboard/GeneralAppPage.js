@@ -12,6 +12,7 @@ import { useSettingsContext } from '../../components/settings';
 // sections
 import { AnalyticsWidgetSummary } from '../../sections/@dashboard/general/analytics';
 import { ChartLine } from '../../sections/_examples/extra/chart';
+import BasicTable from '../../sections/_examples/mui/table/BasicTable';
 
 // assets
 
@@ -64,6 +65,15 @@ export default function GeneralAppPage() {
               <CardHeader title="Últimos 9 meses" />
               <CardContent>
                 <ChartLine />
+              </CardContent>
+            </Card>
+          </Grid>
+
+          <Grid item xs={12}>
+            <Card dir="ltr">
+              <CardHeader title="Negócios neste mês" />
+              <CardContent>
+                <BasicTable />
               </CardContent>
             </Card>
           </Grid>     
