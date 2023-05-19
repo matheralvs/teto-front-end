@@ -14,7 +14,6 @@ import { useSettingsContext } from '../../components/settings';
 // sections
 import { AnalyticsWidgetSummary } from '../../sections/@dashboard/general/analytics';
 import { ChartLine } from '../../sections/_examples/extra/chart';
-import BasicTable from '../../sections/_examples/mui/table/BasicTable';
 
 import {
   AppNewInvoice,
@@ -88,15 +87,6 @@ export default function GeneralAppPage() {
               ]}
             />
           </Grid>
-
-          <Grid item xs={12}>
-            <Card dir="ltr">
-              <CardHeader title="Negócios neste mês" />
-              <CardContent>
-                <BasicTable />
-              </CardContent>
-            </Card>
-          </Grid>     
         </Grid>
       </Container>
     </>
