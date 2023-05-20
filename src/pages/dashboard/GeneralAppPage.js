@@ -30,7 +30,7 @@ export default function GeneralAppPage() {
   return (
     <>
       <Helmet>
-        <title>Teto Solar</title>
+        <title>Início | Teto Solar</title>
       </Helmet>
 
       <Container maxWidth={themeStretch ? false : 'xl'}>
